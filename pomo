@@ -1,9 +1,9 @@
-#! bin/bash
+#!/usr/bin/env bash
 
 pomodoro_duration=${1:-25m}
 
 modal() {
-  sleep $pomodoro_duration &&
+  sleep "$pomodoro_duration" &&
   notify-send "Your turn is over" &&
   zenity \
   --question \
