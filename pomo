@@ -3,7 +3,7 @@
 pomodoro_duration=${1:-25m}
 
 modal() {
-  notify-send "Good work :)"
+  notify-send "Pomodoro has started. Have a good work :)"
   sleep "$pomodoro_duration" &&
   notify-send "Your turn is over" &&
   zenity \
